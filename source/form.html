@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body class="page-body">
+
+  <header class="page-header">
+    <nav class="page-header__nav">
+      <ul class="page-header__site-list site-list">
+        <li class="site-list__item">
+          <a href="#">Главная</a>
+        </li>
+
+        <li class="site-list__item">
+          <a href="photo.html">Фото и видео</a>
+        </li>
+
+        <li class="site-list__item">
+          <a href="form.html">Форма отзыва</a>
+        </li>
+
+        <li class="site-list__item">
+          <a href="">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+
+    <a class="page-header__logo logo">
+      <img src="https://via.placeholder.com/150x150" width="" height="" alt="">
+    </a>
+
+    <button class="page-header__toggle" type="button">
+      <span class="visually-hidden">Показать/скрыть пункты меню</span>
+    </button>
+
+    <div class="page-header__intro-wrapper header-intro">
+      <div class="header-intro__item">
+        <img src="https://via.placeholder.com/150x150" width="" height="" alt="">
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="form">
+      <h2 class="form__title">Оставьте свой отзыв</h2>
+      <p class="form__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+
+      <form action="#" methon="post">
+
+        <fieldset class="form__field form__field--name">
+          <legend class="form__field-title">Представтесь:</legend>
+          <ul class="form__field-list">
+
+            <li class="form__field-item field-text">
+              <label class="field-text__label">Имя</label>
+              <input class="field-text__input" type="text" name="name" id="name" placeholder="Петр">
+            </li>
+
+            <li>
+              <label class="field-text__label">Фамилия</label>
+              <input class="field-text__input" type="text" name="surname" id="surname" placeholder="Иванов">
+            </li>
+
+            <li>
+              <label class="field-text__label">Отчество</label>
+              <input class="field-text__input" type="text" name="patronymic" id="patronymic"
+                placeholder="Александрович">
+            </li>
+
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__field form__field--contacts">
+          <legend class="form__field-title">Контактная информация:</legend>
+          <ul class="form__field-list">
+
+            <li class="form__field-item field-text field-text--contacts">
+              <label class="field-text__label" for="telephone">Контактный телефон*:</label>
+              <input class="field-text__input" type="text" name="telephon" id="telephone" placeholder="Введите телефон" required>
+              <span class="field-text__telephone-icon"></span>
+            </li>
+
+            <li class="form__field-item field-text field-text--contacts">
+              <label class="field-text__label" for="email">Электронная почта*:</label>
+              <input class="field-text__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+              <span class="field-text__email-icon"></span>
+            </li>
+
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__field form__field--impressions">
+          <legend class="form__field-title">Ваше общее впечатление:</legend>
+          <ul class="form__field-list">
+
+            <li class="form__field-item field-radio">
+              <input class="visually-hidden field-radio__input" type="radio" name="impressions" id="positive" value="positive" checked>
+              <label class="field-radio__label" for="positive">Скорее положительное</label>
+            </li>
+
+            <li class="form__field-item field-radio">
+              <input class="visually-hidden field-radio__input" type="radio" name="impressions" id="negative" value="negative">
+              <label class="field-radio__label" for="negative">Скорее отрицательное</label>
+            </li>
+
+            <li class="form__field-item field-radio">
+              <input class="visually-hidden field-radio__input" type="radio" name="impressions" id="difficult" value="difficult">
+              <label class="field-radio__label" for="difficult">Затрудняюсь ответить</label>
+            </li>
+
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__field form__field--sight">
+          <legend class="form__field-title">Посещенные достопримечательности:</legend>
+          <ul class="form__field-list">
+
+            <li class="form__field-item  field-checkbox">
+              <input class="visually-hidden  field-checkbox__input" type="checkbox" name="sight-1" id="sight-1" checked>
+              <label class="field-checkbox__label" for="sight-1">Мост Дьявола</label>
+            </li>
+
+            <li class="form__field-item  field-checkbox">
+              <input class="visually-hidden  field-checkbox__input" type="checkbox" name="sight-2" id="sight-2" checked>
+              <label class="field-checkbox__label" for="sight-2">Гора-Колокол</label>
+            </li>
+
+            <li class="form__field-item  field-checkbox">
+              <input class="visually-hidden  field-checkbox__input" type="checkbox" name="sight-3" id="sight-3" checked>
+              <label class="field-checkbox__label" for="sight-3">Слайд-парк</label>
+            </li>
+
+            <li class="form__field-item  field-checkbox">
+              <input class="visually-hidden  field-checkbox__input" type="checkbox" name="sight-4" id="sight-4">
+              <label class="field-checkbox__label" for="sight-4">Красные скалы</label>
+            </li>
+
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__field form__field--emotions">
+          <legend class="form__field-title">Опишите свои эмоции:</legend>
+          <div class="form__field-item  field-text">
+            <textarea class="field-text__input field-text__input--textarea" name="emotion" id="emotion" placeholder="Опишите подробно все свои восторги"></textarea>
+          </div>
+          <button class="form__apply  btn" type="submit">Отправить отзыв</button>
+        </fieldset>
+
+      </form>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+
+    <b class="hashtag">#visitsedona</b>
+
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social-list__link" href="#">
+          <span class="visually-hidden">Перейти на страницу Твиттер</span>
+        </a>
+      </li>
+
+      <li class="social-list__item">
+        <a class="social-list__link" href="#">
+          <span class="visually-hidden">Перейти на страницу в Фейсбук</span>
+        </a>
+      </li>
+
+      <li class="social-list__item">
+        <a class="social-list__link" href="#">
+          <span class="visually-hidden">Перейти на страницу канала Ютуб</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="page-footer__item copyright">
+      <span class="copyright__text">Разработано</span>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">HTML Academy</span>
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
