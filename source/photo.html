@@ -1,148 +1,191 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body class="page-body">
 
-    <header class="page-header">
-      <nav class="page-header__nav">
-        <ul class="page-header__site-list site-list">
-          <li class="site-list__item">
-            <a href="#">Главная</a>
-          </li>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
 
-          <li class="site-list__item">
-            <a href="photo.html">Фото и видео</a>
-          </li>
+<body class="page-body">
 
-          <li class="site-list__item">
-            <a href="form.html">Форма отзыва</a>
-          </li>
+  <header class="page-header">
+    <nav class="page-header__nav">
+      <ul class="page-header__site-list site-list">
+        <li class="site-list__item">
+          <a href="#">Главная</a>
+        </li>
 
-          <li class="site-list__item">
-            <a href="">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+        <li class="site-list__item">
+          <a href="photo.html">Фото и видео</a>
+        </li>
 
-      <a class="page-header__logo">
+        <li class="site-list__item">
+          <a href="form.html">Форма отзыва</a>
+        </li>
+
+        <li class="site-list__item">
+          <a href="">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+
+    <a class="page-header__logo logo">
+      <img src="https://via.placeholder.com/150x150" width="" height="" alt="">
+    </a>
+
+    <button class="page-header__toggle" type="button">
+      <span class="visually-hidden">Показать/скрыть пункты меню</span>
+    </button>
+
+    <div class="page-header__intro-wrapper header-intro">
+      <div class="header-intro__item">
         <img src="https://via.placeholder.com/150x150" width="" height="" alt="">
-      </a>
+      </div>
+    </div>
+  </header>
 
-      <button class="page-header__toggle" type="button">
-        <span class="visually-hidden">Показать/скрыть пункты меню</span>
-      </button>
 
-      <div class="page-header__intro-wrapper header-intro">
-        <div class="header-intro__item">
-          <img src="https://via.placeholder.com/150x150" width="" height="" alt="">
+  <main class="page-main">
+
+    <section class="photo">
+      <h2 class="photo__title">Фото и видео</h2>
+      <p class="photo__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+
+      <ul class="photo-list">
+
+        <li class="photo-list__item">
+          <picture>
+            <img src="https://via.placeholder.com/150x150" width="" height="" alt="">
+          </picture>
+
+
+          <div class="photo-info__wrapper photo-info">
+            <h3 class="photo-info__title">Неродные просторы</h3>
+            <p class="photo-info__author">Автор фото: Борис</p>
+            <div class="photo-info__like like">
+              <button class="like__button" type="button">
+                <span class="visually-hidden">Поставить лайк</span>
+              </button>
+              <p class="like__count">1350</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="photo-list__item">
+          <picture>
+            <img src="https://via.placeholder.com/150x150" width="" height="" alt="">
+          </picture>
+
+          <div class="photo-info__wrapper photo-info">
+            <h3 class="photo-info__title">Местная растительность</h3>
+            <p class="photo-info__author">Автор фото: Сергей</p>
+            <div class="photo-info__like like">
+              <button class="like__button" type="button">
+                <span class="visually-hidden">Поставить лайк</span>
+              </button>
+              <p class="like__count">143</p>
+            </div>
+        </li>
+
+        <li class="photo-list__item">
+          <picture>
+            <img src="https://via.placeholder.com/150x150" width="" height="" alt="">
+          </picture>
+
+          <div class="photo-info__wrapper photo-info">
+            <h3 class="photo-info__title">Дорога на север</h3>
+            <p class="photo-info__author">Автор фото: Петр</p>
+            <div class="photo-info__like like">
+              <button class="like__button" type="button">
+                <span class="visually-hidden">Поставить лайк</span>
+              </button>
+              <p class="like__count">96</p>
+            </div>
+        </li>
+
+        <li class="photo-list__item">
+          <picture>
+            <img src="https://via.placeholder.com/150x150" width="" height="" alt="">
+          </picture>
+
+          <div class="photo-info__wrapper photo-info">
+            <h3 class="photo-info__title">Мост Дьявола</h3>
+            <p class="photo-info__author">Автор фото: Антон</p>
+            <div class="photo-info__like like">
+              <button class="like__button" type="button">
+                <span class="visually-hidden">Поставить лайк</span>
+              </button>
+              <p class="like__count">254</p>
+            </div>
+        </li>
+
+      </ul>
+    </section>
+
+    <section class="presentation">
+      <h2 class="visually-hidden">Видеопрезентация</h2>
+      <p class="presentation__title">Вы еще сомневаетесь?</p>
+      <p class="presentation__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+
+      <div class="presentation__video">
+        <picture class="presentation__photo">
+          <img src="https://via.placeholder.com/150x150">
+        </picture>
+
+        <div class="presentation__controls controls">
+          <button class="controls__btn controls__btn--replay">
+            <span class="visually-hidden">Повторить</span>
+          </button>
+
+          <div class="controls__duration">
+            <div class="controls__duration-scale">
+              <div class="controls__duration-toggle"></div>
+            </div>
+          </div>
+
+          <button class="controls__btn controls__btn--subtitles">
+            <span class="visually-hidden">Включить или выключить субтитры</span>
+          </button>
+
+          <button class="controls__btn controls__btn--fullscreen">
+            <span class="visually-hidden">Включить или выключить полноэкранный режим</span>
+          </button>
         </div>
       </div>
-    </header>
+    </section>
+  </main>
 
+  <footer class="page-footer">
 
-    <main class="page-main">
-      <h2 class="page-main__title">Фото и видео</h2>
-      <p class="page-main__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-      <section class="photo">
-        <h2 class="visually-hidden">Фото Седоны</h2>
-        <ul class="photo-list">
-          <li class="photo-list__item">
-            <picture>
-              <img src="https://via.placeholder.com/150x150" width="" height="" alt="">
-            </picture>
-            <div class="photo-info__wrapper photo-info">
-              <h3 class="photo-info__title">Неродные просторы</h3>
-              <p class="photo-info__author">Автор фото: Борис</p>
-              <div class="photo-info__like like">
-                <button class="like__button" type="button">
-                  <span class="visually-hidden">Поставить лайк</span>
-                </button>
-                <p class="like__count">1350</p>
-              </div>
-            </div>
-          </li>
-          <li class="photo-list__item">
-            <picture>
-              <img src="https://via.placeholder.com/150x150" width="" height="" alt="">
-            </picture>
-            <div class="photo-info__wrapper photo-info">
-              <h3 class="photo-info__title">Местная растительность</h3>
-              <p class="photo-info__author">Автор фото: Сергей</p>
-              <div class="photo-info__like like">
-                <button class="like__button" type="button">
-                  <span class="visually-hidden">Поставить лайк</span>
-                </button>
-                <p class="like__count">143</p>
-              </div>
-          </li>
-          <li class="photo-list__item">
-            <picture>
-              <img src="https://via.placeholder.com/150x150" width="" height="" alt="">
-            </picture>
-            <div class="photo-info__wrapper photo-info">
-              <h3 class="photo-info__title">Дорога на север</h3>
-              <p class="photo-info__author">Автор фото: Петр</p>
-              <div class="photo-info__like like">
-                <button class="like__button" type="button">
-                  <span class="visually-hidden">Поставить лайк</span>
-                </button>
-                <p class="like__count">96</p>
-              </div>
-          </li>
-          <li class="photo-list__item">
-            <picture>
-              <img src="https://via.placeholder.com/150x150" width="" height="" alt="">
-            </picture>
-            <div class="photo-info__wrapper photo-info">
-              <h3 class="photo-info__title">Мост Дьявола</h3>
-              <p class="photo-info__author">Автор фото: Антон</p>
-              <div class="photo-info__like like">
-                <button class="like__button" type="button">
-                  <span class="visually-hidden">Поставить лайк</span>
-                </button>
-                <p class="like__count">254</p>
-              </div>
-          </li>
-        </ul>
-      </section>
-    </main>
+    <b class="hashtag">#visitsedona</b>
 
-    <footer class="page-footer">
-      <p class="page-footer__item hashtag">
-        <a class="hashtag__link" href="#">#visitsedona</a>
-      </p>
-
-      <div class="page-footer__item social">
-        <ul class="social-list">
-          <li class="social-list__item">
-            <a class="social-list__link" href="#">
-              <span class="visually-hidden">Перейти на страницу Твиттер</span>
-            </a>
-          </li>
-
-          <li class="social-list__item">
-            <a class="social-list__link" href="#">
-              <span class="visually-hidden">Перейти на страницу в Фейсбук</span>
-            </a>
-          </li>
-
-          <li class="social-list__item">
-            <a class="social-list__link" href="#">
-              <span class="visually-hidden">Перейти на страницу канала Ютуб</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="page-footer__item copyright">
-        <span class="copyright__text">Разработано</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="visually-hidden">HTML Academy</span>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social-list__link" href="#">
+          <span class="visually-hidden">Перейти на страницу Твиттер</span>
         </a>
-      </div>
-    </footer>
-  </body>
+      </li>
+
+      <li class="social-list__item">
+        <a class="social-list__link" href="#">
+          <span class="visually-hidden">Перейти на страницу в Фейсбук</span>
+        </a>
+      </li>
+
+      <li class="social-list__item">
+        <a class="social-list__link" href="#">
+          <span class="visually-hidden">Перейти на страницу канала Ютуб</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="page-footer__item copyright">
+      <span class="copyright__text">Разработано</span>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">HTML Academy</span>
+      </a>
+    </div>
+  </footer>
+</body>
+
 </html>

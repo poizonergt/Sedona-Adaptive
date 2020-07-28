@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
+
   <body class="page-body">
 
     <header class="page-header">
@@ -22,12 +24,12 @@
           </li>
 
           <li class="site-list__item">
-            <a href="">HTML Academy</a>
+            <a href="#">HTML Academy</a>
           </li>
         </ul>
       </nav>
 
-      <a class="page-header__logo">
+      <a class="page-header__logo logo">
         <img src="https://via.placeholder.com/150x150" width="" height="" alt="">
       </a>
 
@@ -43,9 +45,11 @@
     </header>
 
     <main class="page-main">
-      <h3 class="page-main__title">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h3>
-      <p class="page-main__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+
       <section class="reasons">
+        <h2 class="page-main__title">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="page-main__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+
         <ul class="reasons-list">
           <li class="reasons-list__item reason">
             <h3 class="reason__title">Настоящий городок</h3>
@@ -58,17 +62,17 @@
           </li>
 
           <li class="reasons-list__item feature">
-            <p class="feature__title">Жильё</p>
+            <h3 class="feature__title">Жильё</h3>
             <p class="feature__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
 
           <li class="reasons-list__item feature">
-            <p class="feature__title">Сувениры</p>
+            <h3 class="feature__title">Сувениры</h3>
             <p class="feature__description">Не только китайского, но и местного производства!</p>
           </li>
 
           <li class="reasons-list__item feature">
-            <p class="feature__title">Еда</p>
+            <h3 class="feature__title">Еда</h3>
             <p class="feature__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
 
@@ -101,34 +105,48 @@
           </li>
         </ul>
       </section>
+
+      <section class="search">
+        <h2 class="visually-hidden">Поиск гостиницы:</h2>
+        <p class="search__title">Заинтересовались?</p>
+        <p class="search__description">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="search__btn  btn" href="#">Найти гостиницу</a>
+      </section>
+
+      <section class="map">
+        <h2 class="visually-hidden">Карта Седоны</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837881.5542633112!2d-111.84526407419442!3d34.8819785704579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1595580390323!5m2!1sru!2sru"
+          width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0">
+        </iframe>
+      </section>
+
     </main>
 
     <footer class="page-footer">
-      <p class="page-footer__item hashtag">
-        <a class="hashtag__link" href="#">#visitsedona</a>
-      </p>
 
-      <div class="page-footer__item social">
-        <ul class="social-list">
-          <li class="social-list__item">
-            <a class="social-list__link" href="#">
-              <span class="visually-hidden">Перейти на страницу Твиттер</span>
-            </a>
-          </li>
+      <b class="hashtag">#visitsedona</b>
 
-          <li class="social-list__item">
-            <a class="social-list__link" href="#">
-              <span class="visually-hidden">Перейти на страницу в Фейсбук</span>
-            </a>
-          </li>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">
+            <span class="visually-hidden">Перейти на страницу Твиттер</span>
+          </a>
+        </li>
 
-          <li class="social-list__item">
-            <a class="social-list__link" href="#">
-              <span class="visually-hidden">Перейти на страницу канала Ютуб</span>
-            </a>
-          </li>
-        </ul>
-      </div>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">
+            <span class="visually-hidden">Перейти на страницу в Фейсбук</span>
+          </a>
+        </li>
+
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">
+            <span class="visually-hidden">Перейти на страницу канала Ютуб</span>
+          </a>
+        </li>
+      </ul>
 
       <div class="page-footer__item copyright">
         <span class="copyright__text">Разработано</span>
@@ -138,4 +156,5 @@
       </div>
     </footer>
   </body>
+
 </html>
